@@ -1,0 +1,15 @@
+doctype html
+html(lang="en")
+    head
+        title= "Foster.bz Home"
+        include includes/header.jade
+    body
+        div.container
+            include includes/navbar.jade
+            div.jumbotron
+                div.container-fluid
+                    h1 Not What You're Looking For?
+                    p The page you navigated to is not found.
+                    p= message
+                    p= error.status
+             include includes/footer.jade
