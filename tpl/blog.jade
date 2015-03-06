@@ -1,10 +1,38 @@
 doctype html
 html(lang="en")
-  head
-    title= "Foster.bz Home"
-    include includes/header.jade
-  body
-    div.container
-      include includes/navbar.jade
-      include includes/comingSoon.jade
-      include includes/footer.jade
+    head
+        title= "Foster.bz Home"
+        include includes/header.jade
+    body
+        div.container
+            include includes/navbar.jade
+            div.container-fluid
+                div.blog-header
+                    h1.blog-title Sentient Thoughts (c) on the world
+                    p.lead.blog-description Musings on life, sports, and technology
+                div.row
+                    div.col-sm-8.blog-main
+                        div.blog-post
+                            h2.blog-post-title Why do we blog
+                            p.blog-post-meta March 6, 2015 by George Foster
+                            div.blog-content
+                                p First blog post...don't really have anything to say. :)
+                        //div.blog-post
+                        //    h2.blog-post-title Some blog post
+                        //    p.blog-post-meta Info, date?, Author?
+                        //    div.blog-content
+                        //        p content
+                        //        p more content
+                        //        p more content
+                    div.col-sm-3.col-sm-offset-1
+                        div.sidebar-module
+                            h4 about me
+                            p I am hawaiian born transported to the tundra of the midwest - raised on Maui I'm enjoying the fun that the midwest offers.
+                        div.sidebar-module
+                            h4 archives
+                            p None
+                        div.sidebar-module
+                            h4 some of my favorite blogs
+                            p: a(href="http://johnhcochrane.blogspot.com/", target="_blank") The Great JC aka John Cochrane
+                            p: a(href="http://www.becker-posner-blog.com/", target="_blank") Gary Becker (RIP) and Richard Posner
+            include includes/footer.jade
